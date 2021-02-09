@@ -1,0 +1,14 @@
+package net.einself.bench.slf4j;
+
+import org.openjdk.jmh.Main;
+import org.openjdk.jmh.runner.RunnerException;
+
+import java.io.IOException;
+
+public class Benchmark {
+
+    public static void main(String[] args) throws IOException, RunnerException {
+        Main.main(args);
+    }
+
+}

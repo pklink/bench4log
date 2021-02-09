@@ -1,0 +1,122 @@
+C:\Users\Nutzer\.jdks\adopt-openjdk-11.0.10\bin\java.exe "-javaagent:C:\Program Files\JetBrains\IntelliJ IDEA 2020.3\lib\idea_rt.jar=52949:C:\Program Files\JetBrains\IntelliJ IDEA 2020.3\bin" -Dfile.encoding=UTF-8 -classpath D:\IdeaProjects\slf4j-bench\target\classes;C:\Users\Nutzer\.m2\repository\org\slf4j\slf4j-log4j12\2.0.0-alpha1\slf4j-log4j12-2.0.0-alpha1.jar;C:\Users\Nutzer\.m2\repository\log4j\log4j\1.2.17\log4j-1.2.17.jar;C:\Users\Nutzer\.m2\repository\org\slf4j\slf4j-api\2.0.0-alpha1\slf4j-api-2.0.0-alpha1.jar;C:\Users\Nutzer\.m2\repository\de\mkammerer\argon2-jvm\2.7\argon2-jvm-2.7.jar;C:\Users\Nutzer\.m2\repository\net\java\dev\jna\jna\5.5.0\jna-5.5.0.jar;C:\Users\Nutzer\.m2\repository\org\openjdk\jmh\jmh-core\1.19\jmh-core-1.19.jar;C:\Users\Nutzer\.m2\repository\net\sf\jopt-simple\jopt-simple\4.6\jopt-simple-4.6.jar;C:\Users\Nutzer\.m2\repository\org\apache\commons\commons-math3\3.2\commons-math3-3.2.jar;C:\Users\Nutzer\.m2\repository\org\openjdk\jmh\jmh-generator-annprocess\1.19\jmh-generator-annprocess-1.19.jar net.einself.bench.slf4j.Benchmark ComplexCalculationBenchmark
+WARNING: An illegal reflective access operation has occurred
+WARNING: Illegal reflective access by org.openjdk.jmh.util.Utils (file:/C:/Users/Nutzer/.m2/repository/org/openjdk/jmh/jmh-core/1.19/jmh-core-1.19.jar) to field java.io.PrintStream.charOut
+WARNING: Please consider reporting this to the maintainers of org.openjdk.jmh.util.Utils
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+WARNING: All illegal access operations will be denied in a future release
+# JMH version: 1.19
+# VM version: JDK 11.0.10, VM 11.0.10+9
+# VM invoker: C:\Users\Nutzer\.jdks\adopt-openjdk-11.0.10\bin\java.exe
+# VM options: -javaagent:C:\Program Files\JetBrains\IntelliJ IDEA 2020.3\lib\idea_rt.jar=52949:C:\Program Files\JetBrains\IntelliJ IDEA 2020.3\bin -Dfile.encoding=UTF-8
+# Warmup: 5 iterations, 1 s each
+# Measurement: 10 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: net.einself.bench.slf4j.ComplexCalculationBenchmark.classic
+
+# Run progress: 0,00% complete, ETA 00:00:45
+# Fork: 1 of 1
+# Warmup Iteration   1: 8,398 ops/ms
+# Warmup Iteration   2: 14,848 ops/ms
+# Warmup Iteration   3: 15,167 ops/ms
+# Warmup Iteration   4: 14,929 ops/ms
+# Warmup Iteration   5: 15,008 ops/ms
+Iteration   1: 15,040 ops/ms
+Iteration   2: 14,665 ops/ms
+Iteration   3: 15,084 ops/ms
+Iteration   4: 15,312 ops/ms
+Iteration   5: 15,429 ops/ms
+Iteration   6: 15,555 ops/ms
+Iteration   7: 15,163 ops/ms
+Iteration   8: 15,618 ops/ms
+Iteration   9: 15,477 ops/ms
+Iteration  10: 15,547 ops/ms
+
+
+Result "net.einself.bench.slf4j.ComplexCalculationBenchmark.classic":
+  15,289 ±(99.9%) 0,454 ops/ms [Average]
+  (min, avg, max) = (14,665, 15,289, 15,618), stdev = 0,300
+  CI (99.9%): [14,835, 15,743] (assumes normal distribution)
+
+
+# JMH version: 1.19
+# VM version: JDK 11.0.10, VM 11.0.10+9
+# VM invoker: C:\Users\Nutzer\.jdks\adopt-openjdk-11.0.10\bin\java.exe
+# VM options: -javaagent:C:\Program Files\JetBrains\IntelliJ IDEA 2020.3\lib\idea_rt.jar=52949:C:\Program Files\JetBrains\IntelliJ IDEA 2020.3\bin -Dfile.encoding=UTF-8
+# Warmup: 5 iterations, 1 s each
+# Measurement: 10 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: net.einself.bench.slf4j.ComplexCalculationBenchmark.debugParam
+
+# Run progress: 33,33% complete, ETA 00:00:32
+# Fork: 1 of 1
+# Warmup Iteration   1: 179858,690 ops/ms
+# Warmup Iteration   2: 182649,653 ops/ms
+# Warmup Iteration   3: 222762,563 ops/ms
+# Warmup Iteration   4: 221659,528 ops/ms
+# Warmup Iteration   5: 222821,322 ops/ms
+Iteration   1: 223109,498 ops/ms
+Iteration   2: 222707,418 ops/ms
+Iteration   3: 223072,527 ops/ms
+Iteration   4: 223204,579 ops/ms
+Iteration   5: 222551,265 ops/ms
+Iteration   6: 220591,813 ops/ms
+Iteration   7: 222798,439 ops/ms
+Iteration   8: 222876,949 ops/ms
+Iteration   9: 222874,757 ops/ms
+Iteration  10: 223917,390 ops/ms
+
+
+Result "net.einself.bench.slf4j.ComplexCalculationBenchmark.debugParam":
+  222770,464 ±(99.9%) 1287,953 ops/ms [Average]
+  (min, avg, max) = (220591,813, 222770,464, 223917,390), stdev = 851,901
+  CI (99.9%): [221482,510, 224058,417] (assumes normal distribution)
+
+
+# JMH version: 1.19
+# VM version: JDK 11.0.10, VM 11.0.10+9
+# VM invoker: C:\Users\Nutzer\.jdks\adopt-openjdk-11.0.10\bin\java.exe
+# VM options: -javaagent:C:\Program Files\JetBrains\IntelliJ IDEA 2020.3\lib\idea_rt.jar=52949:C:\Program Files\JetBrains\IntelliJ IDEA 2020.3\bin -Dfile.encoding=UTF-8
+# Warmup: 5 iterations, 1 s each
+# Measurement: 10 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: net.einself.bench.slf4j.ComplexCalculationBenchmark.supplier
+
+# Run progress: 66,67% complete, ETA 00:00:16
+# Fork: 1 of 1
+# Warmup Iteration   1: 164607,602 ops/ms
+# Warmup Iteration   2: 159246,024 ops/ms
+# Warmup Iteration   3: 186570,656 ops/ms
+# Warmup Iteration   4: 187004,713 ops/ms
+# Warmup Iteration   5: 185299,712 ops/ms
+Iteration   1: 186733,515 ops/ms
+Iteration   2: 185797,145 ops/ms
+Iteration   3: 187359,080 ops/ms
+Iteration   4: 186823,574 ops/ms
+Iteration   5: 185653,234 ops/ms
+Iteration   6: 186775,374 ops/ms
+Iteration   7: 186660,045 ops/ms
+Iteration   8: 186618,338 ops/ms
+Iteration   9: 184737,879 ops/ms
+Iteration  10: 185322,433 ops/ms
+
+
+Result "net.einself.bench.slf4j.ComplexCalculationBenchmark.supplier":
+  186248,062 ±(99.9%) 1242,702 ops/ms [Average]
+  (min, avg, max) = (184737,879, 186248,062, 187359,080), stdev = 821,971
+  CI (99.9%): [185005,359, 187490,764] (assumes normal distribution)
+
+
+# Run complete. Total time: 00:00:48
+
+Benchmark                                Mode  Cnt       Score      Error   Units
+ComplexCalculationBenchmark.classic     thrpt   10      15,289 ±    0,454  ops/ms
+ComplexCalculationBenchmark.debugParam  thrpt   10  222770,464 ± 1287,953  ops/ms
+ComplexCalculationBenchmark.supplier    thrpt   10  186248,062 ± 1242,702  ops/ms
+
+Process finished with exit code 0
